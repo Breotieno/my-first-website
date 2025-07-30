@@ -3,30 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Brenda Night | Portfolio</title>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .projects-section {
+      padding: 20px;
+    }
+
+    .project {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 15px 0;
+      background-color: #f9f9f9;
+    }
+
+    .project img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+    }
+
+    .project-buttons a {
+      display: inline-block;
+      margin-top: 10px;
+      margin-right: 10px;
+      padding: 8px 15px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .project-buttons a:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>My Portfolio</h1>
+    <h1>My Projects</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
-      <a href="portfolio.html">Portfolio</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <section>
-    <h2>Professional Portfolio</h2>
-    <p>Here’s a collection of my personal and professional work, including my hospitality experience, virtual assistant training, and growing journey as a software developer.</p>
-    
-    <ul>
-      <li><strong>Guest Relations (Hotel Industry):</strong> 3+ years providing excellent service and communication</li>
-      <li><strong>Virtual Assistant Projects:</strong> Support roles using communication, email handling, and tech skills</li>
-      <li><strong>Software Development:</strong> Current student at PLP, learning Git, HTML, CSS, and JavaScript</li>
-      <li><strong>Portfolio Website:</strong> <a href="https://breotieno.github.io/my-first-website/" target="_blank">My First Website</a></li>
-    </ul>
+  <section class="projects-section">
+    <h2>Featured Projects</h2>
+
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <img src="https://via.placeholder.com/400x200?text=Portfolio+Screenshot" alt="Portfolio Screenshot" />
+      <p>This is my personal portfolio made with HTML & CSS. It's my first web project and shows my journey into tech.</p>
+      <div class="project-buttons">
+        <a href="https://breotieno.github.io/my-first-website/" target="_blank">🌐 View Live</a>
+        <a href="https://github.com/Breotieno/my-first-website" target="_blank">💻 View Code</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Future Project</h3>
+      <img src="https://via.placeholder.com/400x200?text=Coming+Soon" alt="Coming Soon" />
+      <p>I plan to build a JavaScript to-do list next, and more beginner-friendly apps!</p>
+    </div>
   </section>
 
   <footer>
