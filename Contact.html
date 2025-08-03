@@ -2,40 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Brenda Night</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    .contact-container {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 30px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .contact-container h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+
+    .contact-container h3 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: normal;
+      color: #666;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      margin-bottom: 20px;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px;
+      font-size: 1rem;
+      background-color: #2d89ef;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #1b5fc3;
+    }
+
+    .email-display {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="contact-container">
+    <h1>Brenda Night</h1>
+    <h3>Let's Get in Touch</h3>
+    
+    <form action="mailto:brendanight100@gmail.com" method="POST" enctype="text/plain">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
 
-  <main>
-    <section class="contact" id="contact">
-      <h2>Contact Me</h2>
-      <form action="mailto:brendanight100@gmail.com" method="POST" enctype="text/plain">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" value="Brenda Night" readonly />
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" required>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" value="brendanight100@gmail.com" readonly />
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
 
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Brenda Night. All rights reserved.</p>
-  </footer>
+    <div class="email-display">
+      Or reach me directly at: <strong>brendanight100@gmail.com</strong>
+    </div>
+  </div>
 </body>
 </html>
