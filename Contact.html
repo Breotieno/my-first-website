@@ -1,40 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Brenda</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header>
-    <h1>Contact Me</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Brenda Night"><br><br>
 
-  <section>
-    <p>You can reach me directly at: <a href="mailto:brendanight100@gmail.com">brendanight100@gmail.com</a></p>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="brendanight100@gmail.com"><br><br>
 
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <label>Name:</label><br />
-      <input type="text" name="name" required /><br /><br />
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" placeholder="<p>Have a question or opportunity? Send me a message - i'd love to hear from you!</p>"></textarea><br><br>
 
-      <label>Email:</label><br />
-      <input type="email" name="email" required /><br /><br />
+    <button type="submit">Send Message</button>
+  </form>
 
-      <label>Message:</label><br />
-      <textarea name="message" rows="5" required></textarea><br /><br />
-
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>© 2025 Brenda Night</p>
-  </footer>
-</body>
-</html>
+  <p>You can also email me directly at:  
+    <a href="mailto:brendanight100@gmail.com">brendanight100@gmail.com</a>
+  </p>
+</section>

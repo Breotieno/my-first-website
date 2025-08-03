@@ -1,59 +1,103 @@
-<<<<<<< HEAD
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
+/* Reset default spacing */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
   padding: 20px;
-  text-align: center;
 }
 
 header {
-  background-color: #007bff;
-  color: white;
-  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-nav a {
-  margin: 0 15px;
-  color: white;
-  text-decoration: none;
+h1 {
+  font-size: 2.5rem;
+  color: #0066cc;
 }
 
-h1, h2 {
-  color: #007bff;
+section {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #444;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
 }
 
 ul {
-  list-style-type: none;
-  padding: 0;
+  list-style: disc;
+  margin-left: 20px;
 }
 
 a {
-  color: #007bff;
+  color: #0066cc;
+  text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+/* Button-style link for CV download */
+a[download] {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0066cc;
+  color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+a[download]:hover {
+  background-color: #0055aa;
+}
 form {
-  background: white;
-  padding: 20px;
-  max-width: 400px;
-  margin: 0 auto;
-  border-radius: 10px;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 input, textarea {
-  width: 100%;
   padding: 10px;
-  margin-top: 5px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 500px;
 }
 
-button {
-  background-color: #007bff;
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+button[type="submit"] {
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: #0066cc;
   color: white;
   border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0055aa;
+}
