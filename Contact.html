@@ -1,19 +1,41 @@
-<section id="contact">
-  <h2>Contact Me</h2>
-  <form>
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" placeholder="Brenda Night"><br><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" placeholder="brendanight100@gmail.com"><br><br>
+  <main>
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <form action="mailto:brendanight100@gmail.com" method="POST" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" value="Brenda Night" readonly />
 
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="5" placeholder="<p>Have a question or opportunity? Send me a message - i'd love to hear from you!</p>"></textarea><br><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" value="brendanight100@gmail.com" readonly />
 
-    <button type="submit">Send Message</button>
-  </form>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
 
-  <p>You can also email me directly at:  
-    <a href="mailto:brendanight100@gmail.com">brendanight100@gmail.com</a>
-  </p>
-</section>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Brenda Night. All rights reserved.</p>
+  </footer>
+</body>
+</html>
